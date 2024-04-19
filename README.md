@@ -13,7 +13,7 @@
 To use/run this project, first clone it or download the zip file from Github. If you downloaded the zip file, extract all the files to a folder.
 
 Move into the folder containing the files and open your choice terminal.
-Run the following commnds:
+Run the following commands:
 - composer install
 - php artisan key:generate
 - php artisan jwt:generate
@@ -23,7 +23,7 @@ Run the following commnds:
 Now go to your database and create a database named "apexapi". If you are using password to access your database, update the .env file accordingly. After that, run the command:
 - php artisan migrate
 
-to create the database and tables. The run:
+to create the database and tables. Then run:
 - php artisan db:seed
 
 The last command will create 10 users to experiment with. Go to your users table in the database and change the role for one of the users to 'admin'. All the users' password is 'password'.
@@ -32,7 +32,7 @@ The last command will create 10 users to experiment with. Go to your users table
 
 <p>Using postman, let's test the routes!</p>
 
-Use a user's account with the role of a user to test the following routes:
+Login with a user's account with the role of a user to test the following routes:
 - /viewallusers
 - /viewuser/2 or any other id - pass the id, name, email and role as body-raw variables
 - /updateuser or any other id
